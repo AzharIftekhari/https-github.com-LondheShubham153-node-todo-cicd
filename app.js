@@ -4,7 +4,7 @@ const express = require('express'),
     methodOverride = require('method-override'),
     // Mitigate XSS using sanitizer
     sanitizer = require('sanitizer'),
-    app = express,
+    app = express (),
     port = 8000
 
 app.use(bodyParser.urlencoded({
